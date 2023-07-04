@@ -83,29 +83,36 @@ i {
 {
   max-width: 1170px;
   width: 80%;
+  
   margin: auto;
 }
 .row {
   display: flex;
+  height: 400px;
   /* negative margin */
 }
 
 [class^='col-']
 {
-  padding: 0 1rem;
+  padding: 0 3rem;
 }
 
 .col-3{
   width: calc(100% / 12 * 3);
 }
-.col-4
-{
+.col-4{
   width: calc(100% / 12 * 4);
+  padding-top: 2rem;
+  font-size: 1.2rem;
+  
 }
 .col-8 {
   width: calc(100% / 12 * 8);
 }
 
+h2 {
+    padding-bottom: 1rem;
+}
 
 /* Spacings */
 
@@ -115,7 +122,8 @@ i {
 
 /* Colors */
 .bg_section {
-  background-color: #ededed;
+  background-image: url(../img/wave.svg);
+  background-color: 0 0 0 0.1;
 }
 
 /* #endregion Utility */
@@ -171,6 +179,7 @@ header {
 /* #endregion Header */
 
 /* #region Main */
+
 
 .jumbotron {
  /* background-color: paleturquoise;*/
