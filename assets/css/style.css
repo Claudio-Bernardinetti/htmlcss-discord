@@ -73,6 +73,15 @@ header h1 {
 .button-left, .button-right {
     font-size: 1rem;
 }
+.button-bottom {
+    background-color: rgb(102, 0, 255);
+    margin-top: 2rem;
+    color: white;
+} 
+
+.color-it {
+    color: white;
+}
 
 i {
     padding-right: 0.5rem; 
@@ -120,10 +129,16 @@ h2 {
   padding: 0.75rem 0;
 }
 
+section{
+    padding-top: 5rem;
+    padding-bottom: 15rem;
+}
+
 /* Colors */
-.bg_section {
-  background-image: url(../img/wave.svg);
-  background-color: 0 0 0 0.1;
+
+.h-50 {
+    text-align: center;
+    font-size: 1.2rem;
 }
 
 /* #endregion Utility */
