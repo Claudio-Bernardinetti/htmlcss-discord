@@ -13,38 +13,6 @@ section {
 
 /* #endregion Common */
 
-/* #region Debug */
-/*.debug .container
-{
-  background-color: rgb(255, 166, 0);
-}
-*/
-.debug [class^='col-']
-{
-  height: 200px;
-  background-color: palegreen;
-  border: 1px dashed;
-}
-
-.debug .h-50
-{
-  height: 500px;
-}
-
-.debug .login,
-.debug .logo,
-.debug .menu
-{
-  border: 1px dashed;
-}
-
-.debug .container-sm
-{
-  background-color: palevioletred;
-  height: 100%;
-}
-/* #endregion Debug */
-
 /* #region Utilities */
 
 .d-flex {
@@ -69,6 +37,9 @@ header h1 {
     padding: 0.5rem 1rem;
     border-radius:20px; 
 }
+footer .button-br {
+    background-color: rgb(102, 0, 255) ;
+}
 
 .button-left, .button-right {
     font-size: 1rem;
@@ -92,18 +63,11 @@ i {
 {
   max-width: 1170px;
   width: 80%;
-  
   margin: auto;
 }
 .row {
   display: flex;
   height: 400px;
-  /* negative margin */
-}
-
-[class^='col-']
-{
-  padding: 0 3rem;
 }
 
 .col-3{
@@ -113,7 +77,6 @@ i {
   width: calc(100% / 12 * 4);
   padding-top: 2rem;
   font-size: 1.2rem;
-  
 }
 .col-8 {
   width: calc(100% / 12 * 8);
@@ -134,6 +97,17 @@ section{
     padding-bottom: 15rem;
 }
 
+.bg_section {
+    background-color: rgba(0, 0, 0, 0.1);
+    margin-top: -0.25rem;
+    margin-bottom: -0.1.5rem;
+}
+.wave-top, .wave-midle, .wave-bottom {
+    opacity: calc(0.1);
+}
+.wave-bottom {
+    margin-bottom: -0.00015rem;
+}
 /* Colors */
 
 .h-50 {
@@ -141,14 +115,36 @@ section{
     font-size: 1.2rem;
 }
 
+footer h3 {
+    color: rgb(102, 0, 255) ;
+}
+
+footer .col-3{
+    color: white;
+    padding-top: 2rem;
+}
+
+li {
+    list-style: none;
+}
+
+.color-tl {
+    color: rgb(102, 0, 255)  ;
+}
+hr {
+    border-color: rgb(67, 54, 88)  ;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+}
+
+.wave-midle {
+   transform: rotate(-180deg);
+}
+
 /* #endregion Utility */
 
 /* #region Header */
-
-/*header {
-  background-color: blue;
-}  */
-
 .logo, .login {
   width: 30%;
 }
@@ -164,7 +160,6 @@ header {
     background-image: url(../img/jumbo.png);
     background-size: cover;
     background-repeat: no-repeat;
-    
 }
 
 .menu {
@@ -190,28 +185,23 @@ header {
     color: white;
 }
 
-
 /* #endregion Header */
 
 /* #region Main */
 
-
 .jumbotron {
- /* background-color: paleturquoise;*/
-  
-  height: 450px; /* we might need to keep this */
+  height: 450px; 
   padding: 5rem 0;
 }
-
-
 
 /* #endregion Main */
 
 
 /* #region Footer */
 footer {
-  background-color: darkblue;
+  background-color: rgb(6, 6, 43);
 }
+
 footer > .top, footer > .bottom {
   padding: 1rem 0;
 }
